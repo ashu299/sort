@@ -3,7 +3,7 @@
 all:main
 
 main:main.o insert.o bubble.o selection.o quick.o merge.o
-	gcc main.o insert.o bubble.o select.o quick.o  merge.o -o main
+	gcc main.o insert.o bubble.o selection.o quick.o  merge.o -o main
 
 main.o:main.c
 	gcc -c main.c
@@ -18,8 +18,8 @@ selection.o:selection.c
 	
 	gcc -c selection.c -o selection.o
 
-quick.o:quick.c
-	gcc -c quick.c -o quick.o
+quick.o:quick_sort.c
+	gcc -c quick_sort.c -o quick.o
 
 merge.o:
 	gcc -c merge.c -o merge.o
