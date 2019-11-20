@@ -1,6 +1,6 @@
 #include<stdio.h>
-#include<stdlib.h>
-int main()
+//#include<stdlib.h>
+/*int main()
 {
 	int i,n,j,temp;
 	int flag;
@@ -22,7 +22,11 @@ int main()
 	}
 	printf("\n\n\n");
 	printf("array in sorted order-------------\n");
-
+*/
+void bubble_sort(int arr[],int f,int n)
+{
+	int i,j,flag;
+	int temp=0;
 	for(i=0;i<n-1;i++)
 	{
 		flag=0;
@@ -40,6 +44,7 @@ int main()
 			break;
 	}
 
+printf("\nbubble sorted order:\n");
 	for(i=0;i<n;i++)
 	{
 		printf("%d  ",arr[i]);
